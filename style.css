@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/bn7.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.logo{
+    font-size: 40px;
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ff6600;
+}
+
+@media(max-width:700px){
+    .logo{
+        font-size: 25px;
+        padding-left: 20px;
+        padding-top: 25px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #ff6600;
+}
+}
+
+
+
+
+
+.navlink{
+    display: flex 20px;
+    padding: left;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.navlink{
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.navlink ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2px;
+    padding-right: 40px;
+    color: #fff;
+
+
+}
+.navlink ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    display: inline-block;
+}
+
+.navlink ul li a:hover{
+    color: #ff6600;
+}
+
+
+.navlink ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff6600;
+    display: flow-root;
+    margin: auto;
+    transition: 0.4s;
+} 
+
+
+.navlink ul li:hover::after{
+    width: 100%;
+}
+@media(max-width:700px){
+.navlink ul li{
+    display: block;
+}
+
+.navlink{
+    position: absolute;
+    background: #ff7200;
+    height: 100vh;
+    width: 150px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+}
+
+
+}
+    
+
+
+
+
+.text-box{
+ padding-left: 140px;
+ padding-top: 100px;
+ color: #fff;
+
+
+}
+
+.text-box h1{
+    font-size: 60px;
+    color: #fff;
+}
+
+.text-box p{
+    word-spacing: 1px;
+    padding: left 50px;
+    margin: 10px 0 40px;
+    font-family: serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+ 
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff7200;
+}
+
+
+.button {
+    padding: 16px 50px;
+    font-size: 16px;
+    background-color: #ff7200;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fdfdfd;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    display: inline-block;
+    
+}
+
+
+
+@media(max-width:700px){
+.button{
+    font-size: 9px;
+}
+
+}
+.button a:hover{
+    box-shadow: 0 10px 20px rgba(255, 0, 102, 0.5);
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 26px;
+        padding: left 35px;
+        padding-right: 100px;
+        padding-top:15px;
+    }
+
+.text-box p{
+    font-size: 10px;
+    word-spacing: 0.6px;
+    padding: left 30px;
+    margin: 5px 0 40px;
+    font-size: 10px;
+    color: #fff;
+}
+}
+
+
+
+/*sevices corner*/
+
+
+.services{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+
+} h1{
+
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+    color: #ff7200;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.serv-col{
+
+    flex-basis: 33%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+.h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+} 
+
+.serv-col:hover{
+    box-shadow: 5px 5px 5px 5px #ff7200;
+}
+
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+/*ABOUT GOES HERE BEIBYYYY*/
+
+.circ-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    object-fit: contain;
+}
+.about{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.about-col{
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #ff7200;
+    padding: 25px;
+    cursor: pointer;
+    display: flex; 
+
+
+
+}
+
+
+
+/*call to action*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/bn3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+
+
+.cta h2{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Heres my footer css style*/
+footer{
+    background-color: #080808; 
+    color: #fff;
+       
+   }
+   
+   
+   .container{
+   display: flex;
+   justify-content: center;
+   justify-content: space-between;
+   margin-top: 1000px;
+   padding: 20px 8%;
+   }
+   
+   
+   
+   h3{
+       margin-bottom: 10px;
+       color: #ff7200;
+       
+   }
+   
+   .list ul li{
+   
+       list-style: none;
+       
+   
+   }
+     .list ul li a{
+       text-decoration: none;
+       color: #fff;
+       transition: 0.4s ease-in-out;
+   
+     }
+   
+     .list ul li a:hover{
+       color: #ff7200;
+     }
+   
+   li{
+       list-style: none;
+   }
+   
+   li a{
+       text-decoration: none;
+       color: #fff;
+       transition: 0.4s ease-in-out;
+   
+   }
+   
+   li a:hover{
+       color: #ff7200;
+   }
+   
+   
+   
+   .bottom-bar{
+       text-align: center;
+       border: 1px solid;
+       color: #fff;
+   }
+    
+   
+   
+   .bottom-bar p{
+   
+       font-size: 15px;
+   }
+
+
+   @media(max-width:700px){
+
+    .container{
+        display: list-item;
+        justify-content: flex-end;
+        justify-content: space-between;
+        margin-top: 150px;
+        font-size: 13px;
+        word-spacing: 3px;
+        }
+    .h3{
+            margin-top: 1px;
+            margin-bottom: 10px;
+    }
+
+
+    .list ul li a{
+        text-decoration: none;
+        color: #fff;
+        transition: 0.4s ease-in-out;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    
+      }
+
+    .bottom-bar p{
+        font-size: 10px;
+        font-weight: 0px;
+    }
+   }
+   
+   
